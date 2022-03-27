@@ -40,3 +40,32 @@ require('./utils.js')
 ```
 
 This will make sure the utils file will be loaded before the rest of the app.js file is loaded.
+
+## Exporting from module scope
+When creating a separate module, the file needs to define what it exports at the bottom of the file. This can be done using the command `module.exports = NAME_OF_EXPORT`
+
+Here's an example:
+
+```
+const name = "Module"
+module.exports = name
+```
+
+Now, when someone imports that module into their file and prints it, they'll get "Module" as the printed value.
+
+## Defining a function
+Functions in JS are pretty straightforward. You can define one like so:
+
+```
+const add = (a, b) => {
+    return a + b
+}
+```
+
+And then using exports makes more sense by exporting that function like so:
+
+```
+module.exports = add
+```
+
+Now it can be 'imported' to a different file(s) and used there.
