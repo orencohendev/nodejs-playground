@@ -1,2 +1,4 @@
-# nodejs-playground
-A playground repo to experiment with NodeJS projects created through a Udemy Course.
+# NodeJS Playground
+This repo is where I store all the code I write while learning NodeJS on the Udemy course - [The Complete Node.JS Developer](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/).
+
+I will update this Readme as I go.
