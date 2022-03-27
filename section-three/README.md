@@ -30,3 +30,13 @@ fs.appendFileSync("notes.txt", "This message was appended using appendFileSync!"
 ```
 
 Appending to file does not start a new line. If we want to start a new line, we should include `\n` at the beginning of our string.
+
+## Require an existing JS file
+Running an app all in one file is not ideal. Some code will have to go to different files for clarity.
+To include code from other files we require them at the top of our main file using a contextual path like so:
+
+```
+require('./utils.js')
+```
+
+This will make sure the utils file will be loaded before the rest of the app.js file is loaded.
