@@ -12,3 +12,21 @@ const NAME_OF_REF_TO_MODULE = require('NAME_OF_MODULE')
 ```
 
 That will give us a reference that we can use throughout the file.
+
+## Writing to file
+Writing to file is used by writeFileSync (for now as we will move to async later), like so:
+
+```
+fs.writeFileSync("notes.txt", "This file was created by NodeJS!")
+```
+
+If the file doesn't exist, it will be created. If the file does exist, it will be overriden.
+
+## Appending to file
+Appending to an existing file can be achieved by using appendFileSync like so:
+
+```
+fs.appendFileSync("notes.txt", "This message was appended using appendFileSync!")
+```
+
+Appending to file does not start a new line. If we want to start a new line, we should include `\n` at the beginning of our string.
