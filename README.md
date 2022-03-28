@@ -8,3 +8,6 @@ This section is pure theory. No code was implemented during this section and the
 
 ## Section Two
 Beginning to code with a simple script to understand how to run a js file on nodejs. Some more details documented within the folder itself.
+
+## Section Three
+Beginning work on the notes app. Getting to know local and external modules and how to import them to use in our code.
