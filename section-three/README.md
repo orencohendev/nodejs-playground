@@ -87,3 +87,13 @@ npm install PACKAGE_NAME
 ```
 
 We need to make sure to do this in the root of the project where package.json is located.
+
+### Adding a specific version of a package
+Using the @ sign and the specific version you need, you can install specific versions of packages from npm:
+
+```
+npm install package_name@2.4.1
+```
+
+### Reinstalling the node_modules folder
+That folder shouldn't be committed to git since it will be re-installed from the lock file when we use `npm install` in the root of the project before using it.
