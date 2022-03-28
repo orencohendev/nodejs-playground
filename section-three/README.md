@@ -97,3 +97,17 @@ npm install package_name@2.4.1
 
 ### Reinstalling the node_modules folder
 That folder shouldn't be committed to git since it will be re-installed from the lock file when we use `npm install` in the root of the project before using it.
+
+## Installing Nodemon for a better developer experience
+Nodemon allows us to auto-restart the app whenever we save new changes. That makes life easier. But, nodemon must be installed globally, like so:
+```
+npm install nodemon -g
+```
+
+This will install nodemon on our operating system and will allow us to use it on any app.
+
+### Using nodemon
+to use nodemon after installing it, we need to run our program like this:
+```
+nodemon app.js
+```
