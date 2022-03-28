@@ -69,3 +69,21 @@ module.exports = add
 ```
 
 Now it can be 'imported' to a different file(s) and used there.
+
+## Importing 3rd-party modules
+In NodeJS, we need to use the npm package manager to install 3rd-party packages.
+
+### Initializing project
+We can initialize a project using the following command in the root folder of the project:
+```
+npm init
+```
+
+### Adding 3rd-party packages. 
+We can search for the package we want on [npmjs.com](https://npmjs.com) and then install it via the following command:
+
+```
+npm install PACKAGE_NAME
+```
+
+We need to make sure to do this in the root of the project where package.json is located.
